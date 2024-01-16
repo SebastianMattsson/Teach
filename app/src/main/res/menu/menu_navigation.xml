@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/latest_questions"
+        android:title="Senaste"
+        android:icon="@drawable/ic_baseline_watch_later_24"
+        />
+    <item
+        android:id="@+id/user_questions"
+        android:title="Dina frågor"
+        android:icon="@drawable/ic_baseline_question_answer_24"
+        />
+    <item
+        android:id="@+id/user_profile"
+        android:title="Min profil"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+    <item
+        android:id="@+id/notification"
+        android:title="Aviseringar"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        />
+
+</menu>

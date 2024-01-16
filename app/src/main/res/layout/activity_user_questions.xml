@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUserQuestions"
+    android:background="@drawable/bakgrund_register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_user_questions"
+        android:text="Dina ställda frågor"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/bevan"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_questions"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/tv_title_user_questions">
+
+    </ListView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv_create_new_question"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentRight="true"
+        android:background="@color/green"
+        android:src="@drawable/ic_baseline_add_24"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        app:shapeAppearanceOverlay="@style/RoundedImage"
+        app:strokeWidth="2dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/purple_700"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

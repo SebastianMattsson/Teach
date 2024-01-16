@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_background"
+    app:cardBackgroundColor="@color/red"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="50dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:layout_marginVertical="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/subject_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/teacher"
+        app:shapeAppearanceOverlay="@style/RoundedImage"
+        />
+
+    <TextView
+        android:id="@+id/subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/subject_pic"
+        android:fontFamily="@font/bevan"
+        android:text="Subject Name"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/subject_age_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject_name"
+        android:layout_toRightOf="@id/subject_pic"
+        android:fontFamily="@font/bevan"
+        android:text="Subject agegroup"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
